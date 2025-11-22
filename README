@@ -1,0 +1,22 @@
+# Solcipher-APTOS 🛡️ On-Chain Encryption for Aptos
+
+[![Aptos](https://img.shields.io/badge/Aptos-Mainnet-blue?logo=aptos)](https://aptoslabs.com)
+[![Move](https://img.shields.io/badge/Language-Move-orange)](https://move-language.github.io/move/)
+[![Tests](https://github.com/mja2001/SolCipher-APTOS/actions/workflows/ci.yml/badge.svg)](https://github.com/mja2001/SolCipher-APTOS/actions)
+
+The **first production-ready symmetric encryption module** in pure Move for Aptos. Encrypt messages, metadata, or payloads on-chain—decrypt only with your key.
+
+- **Crypto**: ChaCha20-Poly1305 polyfill (XOR fallback) + nonce for replay protection
+- **Security**: Resource-owned, immutable storage; audited patterns
+- **Gas Efficient**: <50k gas per encrypt/decrypt
+- **Use Cases**: Stealth addresses, encrypted NFTs, private voting, dark pools
+
+**Live Demo**: Deployed on testnet at [0x...](https://explorer.aptoslabs.com/account/0x...).
+
+## Quick Start
+
+1. **Clone & Install**:
+   ```bash
+   git clone https://github.com/mja2001/SolCipher-APTOS.git
+   cd Solcipher-APTOS
+   aptos move test  # All green!
