@@ -1,0 +1,14 @@
+
+##### 6. `.github/workflows/ci.yml` (Auto-Test on Push)
+```yaml
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: aptos-labs/setup-aptos-cli@v1
+      - uses: actions/checkout@v4
+      - run: aptos move test --verbose
