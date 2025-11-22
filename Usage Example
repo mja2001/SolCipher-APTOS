@@ -1,0 +1,2 @@
+solcipher::sol_cipher::encrypt_message(account, "My secret votes", key_bytes);
+let plaintext = solcipher::sol_cipher::decrypt_message(account, key_bytes);
